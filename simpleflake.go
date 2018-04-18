@@ -18,6 +18,16 @@ var (
 	randomBits    uint32 = 64 - timestampBits
 )
 
+//Generate a new ID and panic on error
+func Next() (id uint64) {
+	id, err := New()
+	if err != nil {
+		panic(err)
+	}
+
+	return id
+}
+
 // Generate a new 64-bit, roughly-ordered, unique ID
 func New() (id uint64, err error) {
 	seq, err := randomSequence()
