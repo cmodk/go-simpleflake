@@ -1,18 +1,16 @@
 # go-simpleflake
 
-[![travis](https://travis-ci.org/intelekshual/go-simpleflake.svg)](https://travis-ci.org/intelekshual/go-simpleflake)
-
 64-bit, roughly-ordered, unique ID generator in Go. Inspired by [this article](http://engineering.custommade.com/simpleflake-distributed-id-generation-for-the-lazy/) and the related [Python library](https://github.com/SawdustSoftware/simpleflake).
 
 ## Installation
 
-    $ go get -u github.com/intelekshual/go-snowflake
+    $ go get -u github.com/cmodk/go-snowflake
 
 ## Usage
 
 ```go
 import (
-  "github.com/intelekshual/go-snowflake"
+  "github.com/cmodk/go-snowflake"
 )
 
 func main() {
